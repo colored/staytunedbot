@@ -1,4 +1,3 @@
 class Subscription(object):
-    def __init__(self, name, subscription_type):
+    def __init__(self, name):
         self.name = name
-        self.subscription_type = subscription_type
