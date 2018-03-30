@@ -7,7 +7,7 @@ class Subscriptions:
     def artists(self):
         return [subscription for subscription in self.subscriptions if subscription.type == "artist"]
 
-    def append(self, subscription):
+    def add(self, subscription):
         self.subscriptions.add(subscription)
 
     def remove(self, subscription):
@@ -19,3 +19,7 @@ class Subscriptions:
 
     def __len__(self):
         return len(self.subscriptions)
+
+    @classmethod
+    def get_subscriptions(cls, subscriber_id):
+        pass
